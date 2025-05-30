@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DWELLA - The Future of Renting</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="query.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="section-hero">
+      <nav class="nav">
+        <a href="#"><img class="nav-logo" src="img/dwella demo logo.png" /> </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#section-1">Solution</a></li>
+          <li><a class="nav-link" href="#section-2">Features</a></li>
+          <li><a class="nav-link" href="#section-3">Steps</a></li>
+        </ul>
+        <button class="nav-btn">Early access</button>
+      </nav>
+      <div class="hero grid container">
+        <div class="hero-text">
+          <h1>
+            Smarter <span class="highlight">renting</span>
+            starts here
+          </h1>
+          <p class="hero-desc">
+            From listing to lease, we simplify the entire rental journey
+          </p>
+
+          <p class="available">Available on</p>
+          <div class="stores">
+            <div class="store">
+              <p>Play Store</p>
+              <ion-icon
+                class="store-icon"
+                name="logo-google-playstore"
+              ></ion-icon>
+            </div>
+            <div class="store">
+              <p>App Store</p>
+              <ion-icon class="store-icon" name="logo-apple"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img
+            src="img/hero.png"
+            class="hero-img"
+            alt="a interface display of the dwella app"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="section-solution" id="section-1">
+      <div class="container">
+        <p class="sec-tag">Built-In Solutions</p>
+        <h2 class="section-header">
+          <span class="fill">Solution</span> Made For
+        </h2>
+        <p class="section-desc">
+          Renting shouldn’t be complicated. DWELLA makes it faster, smarter, and
+          more reliable for both landlords and tenants.
+        </p>
+        <div class="solutions-box">
+          <div class="solution-box">
+            <div class="icon-box">
+              <ion-icon name="cash-outline" class="icon icon1"></ion-icon>
+            </div>
+            <div class="solution-text-box">
+              <h3 class="secondary-header">Rent Management</h3>
+              <div class="solution-text">
+                <p class="problem">
+                  <span class="tag">Problem:</span> Manual rent collection is
+                  inefficient, prone to delays, and lacks transparency.
+                </p>
+                <p class="dwella-solution">
+                  <span class="tag">DWELLA's Solution:</span> Automates rent
+                  invoicing, reminders, and secure Online payments — making rent
+                  transactions effortless for both landlords and tenants.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="solution-box">
+            <div class="icon-box">
+              <ion-icon name="settings-outline" class="icon icon2"></ion-icon>
+            </div>
+            <div class="solution-text">
+              <h3 class="secondary-header">Dual Smart Dashboards</h3>
+              <p class="problem">
+                <span class="tag">Problem:</span> Communication and property
+                tracking are fragmented across emails, calls, and spreadsheets.
+              </p>
+              <p class="dwella-solution">
+                <span class="tag">DWELLA's Solution:</span> A modern interface
+                where landlords can track property performance and maintenance
+                requests, while tenants can manage their rent, view documents
+                and submit complaints.
+              </p>
+            </div>
+          </div>
+          <div class="solution-box">
+            <div class="icon-box">
+              <ion-icon name="analytics-outline" class="icon icon3"></ion-icon>
+            </div>
+            <div class="solution-text">
+              <h3 class="secondary-header">AI-Powered Insights</h3>
+              <p class="problem">
+                <span class="tag">Problem:</span> Landlords lack data to
+                optimize pricing or predict tenant behavior.
+              </p>
+              <p class="dwella-solution">
+                <span class="tag">DWELLA's Solution:</span> Uses AI to generate
+                actionable insights such as market rent suggestions, maintenance
+                trends, and tenant risk scoring, boosting profitability and
+                reducing churn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-features" id="section-2">
+      <div class="container">
+        <p class="sec-tag">Features That Matter</p>
+        <h2 class="section-header">Key <span class="fill">Features</span></h2>
+        <div class="features grid grid-2--cols">
+          <div class="feature feature-left">
+            <p class="feature-num">01</p>
+            <h3 class="feature-title">Dual Dashboard</h3>
+            <p class="feature-desc">
+              DWELLA provides dedicated dashboards for both landlords and
+              tenants. Each interface is customized to suit user needs — from
+              tracking rent and property listings to managing lease details and
+              communications.
+            </p>
+          </div>
+          <div class="feature-img ft1"></div>
+          <div class="feature-img ft2"></div>
+          <div class="feature feature-right">
+            <p class="feature-num">02</p>
+            <h3 class="feature-title">Automated Rent Payments</h3>
+            <p class="feature-desc">
+              Tenants can set up automatic rent payments with timely reminders,
+              while landlords enjoy real-time notifications and full transaction
+              histories — making the entire process seamless and stress-free.
+            </p>
+          </div>
+          <div class="feature feature-left">
+            <p class="feature-num">03</p>
+            <h3 class="feature-title">Maintenance Requests</h3>
+            <p class="feature-desc">
+              With DWELLA, tenants can easily submit maintenance issues,
+              including photos and notes. Landlords get instant alerts and can
+              track resolution progress, ensuring faster and more efficient
+              service.
+            </p>
+          </div>
+          <div class="feature-img ft3"></div>
+          <div class="feature-img ft4"></div>
+          <div class="feature feature-right">
+            <p class="feature-num">04</p>
+            <h3 class="feature-title">Smart Insights</h3>
+            <p class="feature-desc">
+              Built-in analytics help landlords make informed decisions — from
+              setting optimal rent prices to monitoring occupancy trends and
+              tenant satisfaction, all powered by intelligent data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-how" id="section-3">
+      <div class="container">
+        <p class="sec-tag">Simple Steps</p>
+        <div class="align">
+          <h2 class="section-header"><span class="fill">How</span> It Works</h2>
+          <div class="switch-buttons">
+            <button class="switch-btn active-btn" id="landlord">
+              Landlord
+            </button>
+            <button class="switch-btn" id="tenant">Tenant</button>
+          </div>
+          <div class="user landlord active-user">
+            <div class="steps grid grid-3--cols">
+              <div class="step">
+                <p class="step-num">STEP <span class="number">1</span></p>
+                <div class="step-box">
+                  <div class="step-details">
+                    <ion-icon
+                      class="step-icon"
+                      name="log-in-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="arrow"
+                      name="arrow-redo-outline"
+                    ></ion-icon>
+                    <h3 class="step-title">Sign up</h3>
+                    <p class="step-desc">
+                      Create your account, customize your profile, and get your
+                      dashboard ready.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <p class="step-num">STEP <span class="number">2</span></p>
+                <div class="step-box mid-step">
+                  <div class="step-details">
+                    <ion-icon
+                      class="step-icon mid-icon"
+                      name="home-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="arrow arr-col"
+                      name="arrow-redo-outline"
+                    ></ion-icon>
+                    <h3 class="step-title">List property</h3>
+                    <p class="step-desc">
+                      Add your rental details and invite or approve tenants to
+                      join the platform.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <p class="step-num">STEP <span class="number">3</span></p>
+                <div class="step-box">
+                  <div class="step-details">
+                    <ion-icon class="step-icon" name="man-outline"></ion-icon>
+                    <h3 class="step-title">Start managing</h3>
+                    <p class="step-desc">
+                      Automate rent collection, handle maintenance, and access
+                      smart tools to grow your rental income.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user tenant">
+            <div class="steps grid grid-3--cols">
+              <div class="step">
+                <p class="step-num">STEP <span class="number">1</span></p>
+                <div class="step-box">
+                  <div class="step-details">
+                    <ion-icon
+                      class="step-icon"
+                      name="log-in-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="arrow"
+                      name="arrow-redo-outline"
+                    ></ion-icon>
+                    <h3 class="step-title">Sign up</h3>
+                    <p class="step-desc">
+                      Create your account, customize your profile, and get your
+                      dashboard ready.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <p class="step-num">STEP <span class="number">2</span></p>
+                <div class="step-box mid-step">
+                  <div class="step-details">
+                    <ion-icon
+                      class="step-icon mid-icon"
+                      name="key-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="arrow arr-col"
+                      name="arrow-redo-outline"
+                    ></ion-icon>
+                    <h3 class="step-title">Pay & Track Rent</h3>
+                    <p class="step-desc">
+                      Set up rent payments, get reminders, and access your full
+                      payment history anytime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <p class="step-num">STEP <span class="number">3</span></p>
+                <div class="step-box">
+                  <div class="step-details">
+                    <ion-icon
+                      class="step-icon"
+                      name="document-text-outline"
+                    ></ion-icon>
+                    <h3 class="step-title">Report</h3>
+                    <p class="step-desc">
+                      Submit maintenance requests, message your landlord, and
+                      manage all your rental info in one place.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-join">
+      <div class="container">
+        <h3 class="join-header">Get Early Access</h3>
+        <div class="join-box">
+          <p class="join-desc">
+            Be among the first to experience DWELLA. Join our early access list
+            to unlock exclusive features, shape the future of smart renting, and
+            enjoy seamless landlord, tenant management before anyone else.
+          </p>
+          <form
+            action="https://formspree.io/f/mvgrpoje"
+            method="POST"
+            class="join-us-form"
+          >
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your mail"
+              class="mail"
+              required
+            />
+            <input
+              name="phone"
+              type="tel"
+              placeholder="mobile-no"
+              class="mobile"
+            />
+            <button type="submit" class="submit">Join</button>
+          </form>
+          <p class="form-message">
+            Thamk you! You've been added to the waitlist
+          </p>
+
+          <div class="rec">
+            <div class="users">
+              <img class="user-img" src="img/hs1.jpg" alt="user headshot" />
+              <img class="user-img" src="img/hs2.jpg" alt="user headshot" />
+              <img class="user-img" src="img/hs3.jpg" alt="user headshot" />
+              <img class="user-img" src="img/hs4.jpg" alt="user headshot" />
+              <img class="user-img" src="img/hs5.jpg" alt="user headshot" />
+              <img class="user-img" src="img/hs7.jpg" alt="user headshot" />
+            </div>
+            <p class="join-desc user-text">
+              Join 12,500+ others on the waitlist
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h2>DWELLA</h2>
+            <p>Smart. Simple. Seamless renting for everyone.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">How It Works</a></li>
+
+              <li><a href="#">Get Early Access</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contacts">
+            <h4>Contact us</h4>
+            <ul class="Contact-col">
+              <li class="item">
+                <ion-icon class="footer-icon" name="call-outline"></ion-icon>
+                <a class="phone" href="tel">09048158151</a>
+              </li>
+              <li class="item">
+                <ion-icon class="footer-icon" name="mail-outline"></ion-icon>
+                <a class="phone" href="mail">alaye.isaac@yahoo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 DWELLA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
