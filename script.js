@@ -6,23 +6,23 @@ const header = document.querySelector(".section-hero");
 const sections = document.querySelectorAll("section");
 
 // sticky nav
-// const stickyNav = function (entries, observer) {
-//   const [entry] = entries;
-//   if (entry.isIntersecting === false) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// };
+const stickyNav = function (entries, observer) {
+  const [entry] = entries;
+  if (entry.isIntersecting === false) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
 
-// const obsOptions = {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: `-${navHeight}px`,
-// };
+const obsOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+};
 
-// const observer = new IntersectionObserver(stickyNav, obsOptions);
-// observer.observe(header);
+const observer = new IntersectionObserver(stickyNav, obsOptions);
+observer.observe(header);
 
 // section reveal
 

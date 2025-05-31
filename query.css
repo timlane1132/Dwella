@@ -149,10 +149,10 @@
     font-size: 2.8rem;
   }
   .switch-buttons {
-    width: 30rem;
+    /* width: 30rem; */
   }
   .switch-btn {
-    width: 13.5rem;
+    /* width: 13.5rem; */
   }
   .steps {
     grid-template-columns: 1fr;
