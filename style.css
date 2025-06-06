@@ -476,6 +476,7 @@ h1 {
 .faq-box {
   grid-template-columns: 1fr 1.5fr;
   max-width: 90%;
+  height: 60rem;
   margin: 9rem auto;
   justify-content: center;
   align-items: center;
