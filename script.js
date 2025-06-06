@@ -140,3 +140,77 @@ form.addEventListener("submit", async function (e) {
     message.style.color = "red";
   }
 });
+
+/*
+// dark and light mode
+const body = document.querySelector("body");
+const sectionHeader = document.querySelectorAll(".section-header");
+const sectionHow = document.querySelectorAll(".section-how");
+const navLink = document.querySelectorAll(".nav-link");
+const stepBox = document.querySelectorAll(".step-box");
+const midStep = document.querySelectorAll(".mid-step");
+const faqBox = document.querySelectorAll(".faq-box");
+const joinBox = document.querySelectorAll(".join-box");
+const modeIcon = document.querySelectorAll(".mode-icon");
+
+const mode = document.querySelector(".mode");
+
+mode.addEventListener("click", function (e) {
+  e.preventDefault();
+  const clickedMode = e.target;
+
+  if (clickedMode.classList.contains("dark")) {
+    body.classList.add("body-dm");
+    //     sectionHeader.forEach((header) =>
+    //       header.classList.add("section-header-dm")
+    //     );
+    sectionHow.classList.add("section-how-dm");
+    //     navLink.classList.add("nav-link-dm");
+    //     stepBox.classList.add("step-box-dm");
+    //     midStep.classList.add("mid-step-dm");
+    //     faqBox.classList.add("faq-box-dm");
+    //     joinBox.classList.add("join-box-dm");
+    //     modeIcon.classList.add("mode-icon-dm");
+  }
+});
+*/
+
+// Faq
+
+const arrowsArr = document.querySelectorAll(".arrows");
+
+arrowsArr.forEach((arrows) => {
+  arrows.addEventListener("click", function (e) {
+    const clicked = e.target;
+    const allAnswer = clicked.closest(".faq-right").querySelectorAll(".answer");
+    const allArrDown = clicked
+      .closest(".faq-right")
+      .querySelectorAll(".arrow-open");
+    const allArrUp = clicked
+      .closest(".faq-right")
+      .querySelectorAll(".answer-close");
+
+    allAnswer.forEach((answer) => answer.classList.remove("active-answer"));
+    allArrDown.forEach((arrDown) => (arrDown.style.display = "block"));
+    allArrUp.forEach((arrUp) => (arrUp.classList.style.display = "none"));
+    // console.log(clicked);
+
+    if (clicked.classList.contains("arrow-open")) {
+      const answer = clicked.closest(".faq").querySelector(".answer");
+      answer.classList.add("active-answer");
+
+      clicked.style.display = "none";
+      const arrUp = clicked.closest(".arrows").querySelector(".arrow-close");
+      arrUp.style.display = "block";
+    }
+
+    if (clicked.classList.contains("arrow-close")) {
+      const answer = clicked.closest(".faq").querySelector(".answer");
+      answer.classList.remove("active-answer");
+
+      clicked.style.display = "none";
+      const arrDown = clicked.closest(".arrows").querySelector(".arrow-open");
+      arrDown.style.display = "block";
+    }
+  });
+});
