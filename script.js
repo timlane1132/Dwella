@@ -178,17 +178,13 @@ mode.addEventListener("click", function (e) {
 // Faq
 
 const arrowsArr = document.querySelectorAll(".arrows");
+const allArrDown = document.querySelectorAll(".arrow-open");
+const allArrUp = document.querySelectorAll(".answer-close");
 
 arrowsArr.forEach((arrows) => {
   arrows.addEventListener("click", function (e) {
     const clicked = e.target;
     const allAnswer = clicked.closest(".faq-right").querySelectorAll(".answer");
-    const allArrDown = clicked
-      .closest(".faq-right")
-      .querySelectorAll(".arrow-open");
-    const allArrUp = clicked
-      .closest(".faq-right")
-      .querySelectorAll(".answer-close");
 
     allAnswer.forEach((answer) => answer.classList.remove("active-answer"));
     allArrDown.forEach((arrDown) => (arrDown.style.display = "block"));
