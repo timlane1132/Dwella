@@ -46,6 +46,27 @@ sections.forEach((section) => {
   section.classList.add("section-hidden");
 });
 
+// mid sec reveal
+// const midSec = document.querySelector(".mid-section-img");
+const text = document.querySelector(".mid-sec-text");
+
+const reveal = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+  }
+  entry.target.style.opacity = "100%";
+  entry.target.style.top = "50%";
+};
+
+const secObserver = new IntersectionObserver(reveal, {
+  root: null,
+  threshold: 1,
+  rootMargin: "-300px",
+});
+
+secObserver.observe(text);
+
 // feature reveal
 
 const features = document.querySelectorAll(".feature");
