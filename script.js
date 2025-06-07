@@ -54,15 +54,16 @@ const reveal = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   else {
+    entry.target.style.opacity = "100%";
+    entry.target.style.top = "50%";
+    observer.unobserve(entry.target);
   }
-  entry.target.style.opacity = "100%";
-  entry.target.style.top = "50%";
 };
 
 const secObserver = new IntersectionObserver(reveal, {
   root: null,
   threshold: 1,
-  rootMargin: "-300px",
+  rootMargin: "-100px",
 });
 
 secObserver.observe(text);
